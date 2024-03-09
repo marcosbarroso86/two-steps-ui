@@ -11,8 +11,35 @@ import img_puerto from "../../assets/img/puerto.jpeg";
 import img_aerea from "../../assets/img/aereo two steps.jpeg";
 import img_maritimo from "../../assets/img/maritim two steps.jpg";
 import img_logistica from "../../assets/img/logistica-profesionales.jpg";
+import img_avimport from "../../assets/img/clientes/avimport.png";
+import img_nira from "../../assets/img/clientes/Nira.png";
+import img_lumpack from "../../assets/img/clientes/lumpack.png";
+import img_hps from "../../assets/img/clientes/hps.png";
+import img_its from "../../assets/img/clientes/its.png";
+import img_aduanero from "../../assets/img/clientes/estudio_aduanero.png";
+import img_cronos from "../../assets/img/clientes/cronos.png";
+import img_burdah from "../../assets/img/clientes/burdah.png";
+import img_locex from "../../assets/img/clientes/locex.png";
+import img_vazquez from "../../assets/img/clientes/estudio_vazques.png";
+import { Resend } from "resend";
 
 const HomeScreen = () => {
+  const handleSubmmit = () => {
+    const resend = new Resend("re_K6xwjNBz_3GEdU7QzJTHWt2jtCLzB5Qka");
+
+    resend.emails
+      .send({
+        from: "onboarding@resend.dev",
+        to: "marcos.barroso86@gmail.com",
+        subject: "Hello World",
+        html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+      .then((response) => console.log("enviado"));
+  };
+
   return (
     <div>
       <header
@@ -26,16 +53,12 @@ const HomeScreen = () => {
             src={logo_png}
             style={{ maxHeight: "80px" }}
           />
-          {/* <h1 className="logo me-auto">
-            <a href="index.html">Arsha</a>
-          </h1> */}
-
           <a href="index.html" className="logo me-auto"></a>
 
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">
+                <a className="nav-link scrollto active" href="#header">
                   Inicio
                 </a>
               </li>
@@ -50,7 +73,7 @@ const HomeScreen = () => {
                 </a>
               </li>
               <li>
-                <a className="nav-link   scrollto" href="#portfolio">
+                <a className="nav-link scrollto" href="#contact">
                   Contacto
                 </a>
               </li>
@@ -60,24 +83,15 @@ const HomeScreen = () => {
         </div>
       </header>
 
-      <section
-        className="row background_header"
-        // style={{
-        //   height: "100vh",
-        //   backgroundSize: "cover cover",
-        //   backgroundRepeat: "no-repeat",
-        //   background:
-        //     "url(https://www.aamsimx.com/wp-content/uploads/2023/09/El-comercio-internacional-en-Mexico-2023.jpg)",
-        // }}
-      >
-        <div className="container d-flex justify-content-evenly align-items-center">
-          <div>
-            <img src={logo_png} />
-          </div>
-          <div>Dos pasos adelante en tus soluciones logisticas</div>
+      <section className="row background_header" data-aos="zoom-in">
+        <div className="d-flex justify-content-evenly align-items-center">
+          <img
+            data-aos="zoom-in"
+            src={logo_png}
+            style={{ position: "absolute", top: 150, left: 100 }}
+          />
         </div>
       </section>
-
       <section id="about" className="about">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
@@ -145,10 +159,52 @@ const HomeScreen = () => {
           </div>
         </div>
       </section>
-      <section id="pricing" className="pricing">
+
+      <section className="" style={{ background: "rgb(192 191 191 / 21%)" }}>
         <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2>Nuestro servicios</h2>
+            <h2>Empresas que nos eligen</h2>
+          </div>
+          <div className="slider">
+            <div className="slide-track">
+              <div className="slide">
+                <img src={img_aduanero} alt="" />
+              </div>
+              <div className="slide">
+                <img src={img_burdah} />
+              </div>
+              <div className="slide">
+                <img src={img_hps} />
+              </div>
+              <div className="slide">
+                <img src={img_avimport} style={{ width: "250px" }} />
+              </div>
+              <div className="slide">
+                <img src={img_its} style={{ width: "300px" }} />
+              </div>
+              <div className="slide">
+                <img src={img_nira} alt="" style={{ width: "200px" }} />
+              </div>
+              <div className="slide">
+                <img src={img_cronos} style={{ width: "350px" }} />
+              </div>
+              <div className="slide">
+                <img src={img_lumpack} alt="" style={{ width: "350px" }} />
+              </div>
+              <div className="slide">
+                <img src={img_locex} alt="" style={{ width: "350px" }} />
+              </div>
+              <div className="slide">
+                <img src={img_vazquez} style={{ width: "350px" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" className="pricing bg_pricing">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title">
+            <h2 >Nuestro servicios</h2>
           </div>
 
           <div className="row">
@@ -245,7 +301,9 @@ const HomeScreen = () => {
             >
               <div className="icon-box">
                 <div className="box featured">
-                  <h4>MARITIMO</h4>
+                  <h4>
+                    <strong>MARITIMO</strong>
+                  </h4>
                   <ul>
                     <li> FCL/FCL </li>
                     <li>LCL/LCL </li>
@@ -264,7 +322,9 @@ const HomeScreen = () => {
             >
               <div className="icon-box">
                 <div className="box featured">
-                  <h4>AÉREO</h4>
+                  <h4>
+                    <strong>AÉREO</strong>
+                  </h4>
                   <ul>
                     <li> Consolidado </li>
                     <li> Back to Back </li>
@@ -281,7 +341,9 @@ const HomeScreen = () => {
             >
               <div className="icon-box">
                 <div className="box featured">
-                  <h4>TERRESTRE</h4>
+                  <h4>
+                    <strong>TERRESTRE</strong>
+                  </h4>
                   <ul>
                     <li> FTL </li>
                     <li> LTL </li>
@@ -299,9 +361,11 @@ const HomeScreen = () => {
             >
               <div className="icon-box">
                 <div className="box featured">
-                  <h4>LOGISTICA INTERNACIONAL</h4>
+                  <h4>
+                    <strong>LOGISTICA INTERNACIONAL</strong>
+                  </h4>
                   <ul>
-                    <li>Almacenaje </li>
+                    <li>Almacenaje</li>
                     <li>Embalaje </li>
                     <li>Etiquetado</li>
                     <li>Consolidación</li>
@@ -320,7 +384,7 @@ const HomeScreen = () => {
         <div data-aos="zoom-in" className="card mb-5 aos-init aos-animate">
           <div className="row gx-0">
             <div className="col-md-6">
-              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column p-2">
+              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column px-5">
                 <h3 className="card-title fw-bold text-uppercase mb-2">
                   TRANSPORTE MARITIMO
                 </h3>
@@ -351,7 +415,7 @@ const HomeScreen = () => {
               />
             </div>
             <div className="col-md-6">
-              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column">
+              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column px-5">
                 <h3 className="card-title fw-bold text-uppercase mb-2">
                   Transporte terrestre
                 </h3>
@@ -375,7 +439,7 @@ const HomeScreen = () => {
         <div data-aos="fade-up" className="card mb-5 aos-init aos-animate">
           <div className="row gx-0">
             <div className="col-md-6">
-              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column">
+              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column px-5">
                 <h3 className="card-title fw-bold text-uppercase mb-2">
                   TRANSPORTE AÉREO
                 </h3>
@@ -405,7 +469,7 @@ const HomeScreen = () => {
               <img src={img_logistica} alt="..." width={"100%"} />
             </div>
             <div className="col-md-6">
-              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column">
+              <div className="card-body d-flex align-items-start justify-content-center h-100 flex-column px-5">
                 <h3 className="card-title fw-bold text-uppercase mb-2">
                   LOGISTICA INTERNACIONAL
                 </h3>
@@ -514,7 +578,9 @@ const HomeScreen = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit">Enviar mensaje</button>
+                  <button onClick={handleSubmmit} type="submit">
+                    Enviar mensaje
+                  </button>
                 </div>
               </form>
             </div>
@@ -534,7 +600,10 @@ const HomeScreen = () => {
               </a>
             </li>
             <li className="list-inline-item">
-              <a className="social-link rounded-circle text-white" href="https://www.instagram.com/twostepslog/">
+              <a
+                className="social-link rounded-circle text-white"
+                href="https://www.instagram.com/twostepslog/"
+              >
                 <i className="bi bi-instagram"></i>
               </a>
             </li>
