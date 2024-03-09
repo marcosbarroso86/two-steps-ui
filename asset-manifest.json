@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/two-steps-ui/static/css/main.072fe24e.css",
+    "main.js": "/two-steps-ui/static/js/main.d13a6725.js",
+    "static/js/787.50586558.chunk.js": "/two-steps-ui/static/js/787.50586558.chunk.js",
+    "static/media/two-steps-office.png": "/two-steps-ui/static/media/two-steps-office.434868e42981af1f1ed6.png",
+    "static/media/two-steps-forward.png": "/two-steps-ui/static/media/two-steps-forward.e67cd233a0caf5baf7b0.png",
+    "static/media/puerto.jpeg": "/two-steps-ui/static/media/puerto.33b6d039cfce5cf67b9f.jpeg",
+    "static/media/maritim two steps.jpg": "/two-steps-ui/static/media/maritim two steps.6d2990641860f5d30fcd.jpg",
+    "static/media/bootstrap-icons.woff?": "/two-steps-ui/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/aereo two steps.jpeg": "/two-steps-ui/static/media/aereo two steps.1ca94487988cc4038d81.jpeg",
+    "static/media/bootstrap-icons.woff2?": "/two-steps-ui/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/avimport.png": "/two-steps-ui/static/media/avimport.ebc2c7de6207165c51f9.png",
+    "static/media/logo-twesteps.png": "/two-steps-ui/static/media/logo-twesteps.0c3cc3a84e4121b22e50.png",
+    "static/media/estudio_aduanero.png": "/two-steps-ui/static/media/estudio_aduanero.23ae27e504b113b5227a.png",
+    "static/media/burdah.png": "/two-steps-ui/static/media/burdah.09b69bc3930da00db9d9.png",
+    "static/media/hps.png": "/two-steps-ui/static/media/hps.a92ae76ed86085e77ca1.png",
+    "static/media/its.png": "/two-steps-ui/static/media/its.276e0d824ecf969c7e8a.png",
+    "static/media/Transporte+por+carretera-640w.jpg": "/two-steps-ui/static/media/Transporte+por+carretera-640w.e0bfe8571763f54a693f.jpg",
+    "static/media/logistica-profesionales.jpg": "/two-steps-ui/static/media/logistica-profesionales.3fe5d9b2570c835dd54b.jpg",
+    "static/media/Nira.png": "/two-steps-ui/static/media/Nira.3a43d2da554fc914ceea.png",
+    "static/media/cronos.png": "/two-steps-ui/static/media/cronos.a096d381fb54c0adbf20.png",
+    "static/media/estudio_vazques.png": "/two-steps-ui/static/media/estudio_vazques.23e09a646379cdd1c40d.png",
+    "static/media/lumpack.png": "/two-steps-ui/static/media/lumpack.0b12376318d18d8ee46c.png",
+    "static/media/locex.png": "/two-steps-ui/static/media/locex.b437d228b0c90e8c8525.png",
+    "index.html": "/two-steps-ui/index.html",
+    "main.072fe24e.css.map": "/two-steps-ui/static/css/main.072fe24e.css.map",
+    "main.d13a6725.js.map": "/two-steps-ui/static/js/main.d13a6725.js.map",
+    "787.50586558.chunk.js.map": "/two-steps-ui/static/js/787.50586558.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.072fe24e.css",
+    "static/js/main.d13a6725.js"
+  ]
+}
