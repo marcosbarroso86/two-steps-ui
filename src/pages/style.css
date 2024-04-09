@@ -220,13 +220,13 @@
 
   .background_header {
     height: 100vh;
-    background: url('../../assets/img/two-steps-forward.png');
+    background: url('../assets/img/two-steps-forward.png');
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   .bg_pricing {
-    background: url('../../assets/img/maritim\ two\ steps.jpg');
+    background: url('../assets/img/maritim\ two\ steps.jpg');
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -299,4 +299,8 @@
    width: 150px;
    
   }
+
+
   
+
+

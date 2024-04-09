@@ -1,1 +1,3 @@
-export const API_KEY = "re_K6xwjNBz_3GEdU7QzJTHWt2jtCLzB5Qka";
+export const API_KEY = "rK7S0CHLFMzZUsWLP";
+export const SERVICE_ID = "service_fmyya4v";
+export const TEMPLATE_ID = "template_srgbfr7"

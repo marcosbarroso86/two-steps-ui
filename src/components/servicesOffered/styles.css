@@ -1,0 +1,11 @@
+.service_box {
+    max-width: 306px;
+}
+
+   /* Tamaño teléfonos (480-menos ) */
+   @media all and (max-width: 480px) { 
+
+    .service_box {
+      width: 100%;
+    }
+ }
